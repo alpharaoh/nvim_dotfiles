@@ -1,7 +1,14 @@
 " Leader key
 let mapleader = ","
 
-nnoremap <leader>n <cmd>NERDTreeToggle<cr>
+let g:closetag_filenames = '*.html,*.jsx,*.tsx'
+
+nnoremap <leader>fn <cmd>NERDTreeToggle<cr>
+nnoremap <leader>n <cmd>NERDTreeFind<cr>
+" enable line numbers
+let NERDTreeShowLineNumbers=1
+" make sure relative line numbers are used
+autocmd FileType nerdtree setlocal relativenumber
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>

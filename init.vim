@@ -1,3 +1,5 @@
+set termguicolors
+
 source ~/.config/nvim/plug.vim
 source ~/.config/nvim/setup/keybindings.vim
 source ~/.config/nvim/plugged/nerdtree/custom_config.vim
